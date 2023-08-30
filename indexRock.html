@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let playerScore = 0;
+        let computerScore = 0;
+        let options = ['rock', 'paper', 'scissors'];
+        
+        function getComputerChoice() {
+                return options[(Math.floor(Math.random() * 3))];
+            }
+            
+        function playRound(playerChoice, computerSelection) {
+                if (playerChoice === 'rock' && computerSelection === 'scissors') {
+                    playerScore++, alert ("You win");
+                } else if ((playerChoice === "rock") && (computerSelection === 'paper')) {
+                    computerScore++, alert ("You lose"); 
+                } else if ((playerChoice === "scissors") && (computerSelection === 'paper')) {
+                    playerScore++, alert ("You win");
+                } else if (playerChoice === "scissors" && computerSelection === 'rock') {
+                    computerScore++, alert ("You lose");
+                } else if (playerChoice === "paper" && computerSelection === 'scissors') {
+                    computerScore++, alert ("You lose");
+                } else if (playerChoice === "paper" && computerSelection === 'rock') {
+                    playerScore++, alert ("You win");
+                } else {
+                    alert ("It's a tie"); }
+                }
+        
+        function game() {        
+            let computerSelection = getComputerChoice();
+            let playerChoice = prompt("Do you choose rock, paper or scissors").toLowerCase();
+            console.log(playRound(playerChoice, computerSelection));
+            console.log("Your score is = " + playerScore);
+            console.log("Your opponent score is = " + computerScore);
+            }
+         
+        game();
+        game();
+        game();
+            
+    </script>
+</body>
+</html>
