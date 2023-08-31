@@ -101,7 +101,7 @@ function capitalizeFirstLetter(str) {
 function openGameOverModal() {
     if (playerScore === 5){
         gameWinner.textContent = `YOU WON!`
-    } else if (playerScore === 5) {
+    } else if (computerScore === 5) {
         gameWinner.textContent = `YOU LOSE`
     }
     restartGame.classList.add('modalShow');}
