@@ -1,0 +1,88 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background: url(./images/background.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    color:white;
+    text-shadow: 2px 2px 6px lightblue;
+    font-size: 90px;
+}
+
+.header {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+    color: white;
+}
+.containerContent, results{
+    display: flex;
+    flex:1;
+    margin-top: 20px;
+    gap:120px;
+}
+
+.description2 {
+    font-size: 80px;
+}
+
+results {
+    padding:20px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.winner {
+    color: white;
+    text-align: center;
+}
+
+.modalContent{
+    max-width: 600px;
+    background-color:white;
+    font-size: 20px;
+    color:black;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+
+.modalShow {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.modalContent:hover{
+    background-color: black;
+    color: white;
+}
