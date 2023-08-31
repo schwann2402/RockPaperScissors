@@ -59,6 +59,7 @@ function handleClick(playerChoice) {
 
     if (isGameOver()) {
         openGameOverModal()
+        showWinner()
     }}
 
 function showWinner() {
