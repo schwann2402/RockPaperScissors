@@ -59,7 +59,6 @@ function handleClick(playerChoice) {
 
     if (isGameOver()) {
         openGameOverModal()
-        showWinner()
     }}
 
 function showWinner() {
@@ -99,11 +98,7 @@ function capitalizeFirstLetter(str) {
 }
 
 function openGameOverModal() {
-    if (playerScore === 5){
-        gameWinner.textContent = `YOU WON!`
-    } else if (computerScore === 5) {
-        gameWinner.textContent = `YOU LOSE`
-    }
+    showWinner()
     restartGame.classList.add('modalShow');}
 
 function restartTheGame() {
